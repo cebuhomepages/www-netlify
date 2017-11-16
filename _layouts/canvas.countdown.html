@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	{% include secure-site.html %}
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="ian@cebuhomepages.com" />
+
+	{% include fb-meta.html %}
+
+	<!-- Favicon-->
+ 	<link rel="shortcut icon" href="{{ site.cdn }}/canvas/images/{{ page.l.favico }}" >
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.r | prepend: site.cdn }}/style.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/dark.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/animate.css" type="text/css" />
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="{{ site.root.css | prepend: site.cdn }}/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Document Title
+	============================================= -->
+	<title>{{ page.title }}</title>
+
+	{% include fb-wca.html %}
+	{% include analytics.html %}
+
+</head>
+
+<body class="stretched" data-loader-timeout="2000">
+
+	{% include adwords-conversion-tracking.html %}
+  	{% include fb-sdk.html %}
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="no-sticky transparent-header dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="{{ site.baseurl }}/l/{{ page.l.index }}" class="standard-logo" data-dark-logo="{{ site.cdn }}/canvas/images/{{ page.l.logo }}"><img src="{{ site.cdn }}/canvas/images/{{ page.l.logo }}" alt="{{ page.l.alt }}"></a>
+						<a href="{{ site.baseurl }}/l/{{ page.l.index }}" class="retina-logo" data-dark-logo="{{ site.cdn }}/canvas/images/{{ page.l.logo2x }}"><img src="{{ site.cdn }}/canvas/images/{{ page.l.logo2x }}" alt="{{ page.l.alt }}"></a>
+					</div><!-- #logo end -->
+
+					<div class="fright dark hidden-sm hidden-xs clearfix" style="margin-top: 30px;">
+
+						<a href="mailto:luchelle@cebuhomepages.com" target="_blank" class="social-icon si-light si-email3">
+							<i class="icon-email3"></i>
+							<i class="icon-email3"></i>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		{{ content }}
+		<!-- Modal Contact Form
+		============================================= -->
+		
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="{{ site.root.js | prepend: site.cdn }}/jquery.js"></script>
+	<script type="text/javascript" src="{{ site.root.js | prepend: site.cdn }}/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="{{ site.root.js | prepend: site.cdn }}/functions.js"></script>
+
+	{% if page.custom_js %}
+  	  {% for js_file in page.custom_js %}
+  		<script src='{{ site.root.js | prepend: site.cdn }}/{{ js_file }}.js' type="text/javascript"></script>
+  	  {% endfor %}
+	{% endif %}
+
+	{% include adwords-remarketing.html %}
+
+</body>
+</html>

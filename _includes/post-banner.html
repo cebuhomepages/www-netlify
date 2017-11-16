@@ -1,0 +1,30 @@
+{% if page.is_blog %}
+ <!-- Banner start -->
+    <section id="banner" class="root-sec green padd-tb-55 single-banner blogpage-banner-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix blog-banner-text blog-single-banner">
+            <div class="col-md-12">
+              <h2 class="title">{{ page.title }}</h2>
+
+              {% if page.author %}
+              <ul class="clearfix blog-post-meta">
+                <li>By <a href="#">{{ page.author }}</a>
+                </li>
+                <li>{{ page.date | date_to_long_string  }}</li>
+                
+                <li>
+                {% if site.data.tags[tag] %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+                {% else %}
+                 <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
+                {% endif %}
+               </li>
+              </ul>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- ./Banner end -->
+{% endif %}

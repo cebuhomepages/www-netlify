@@ -1,0 +1,19 @@
+#div_1bbb_1 {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    box-shadow: none;
+    background-image: none;
+    background-attachment: fix;
+    background-color: #eee;
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+#div_1bbb_0 {
+    padding: 100px 0px;
+    box-shadow: none;
+    outline-offset: -3px;
+    background: /* top, transparent black, faked with gradient */ linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(/images/picjumbo.com_IMG_9102-1920x1068.jpg) no-repeat scroll #fbfbfb;
+    background-position: top;
+    background-size: cover;
+}

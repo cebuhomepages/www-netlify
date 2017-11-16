@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="card-image">
+      <div class="card-img-wrap">
+          {% if include.thumbnail_type == 'audio' %}
+            <div class="blog-post-thumb waves-effect waves-block waves-light">
+            <div class="player" id="audio2" data-file-sec="audios/audio.mp3" data-height="40"></div>
+            </div>
+          {% elsif include.thumbnail_type == 'video' %}
+          <div class="blog-post-thumb videoPost">
+          <iframe src="//player.vimeo.com/video/7449107" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          {% elsif include.thumbnail_type == 'multi_image' %}
+          <div class="blog-post-thumb waves-effect waves-block waves-light">
+          <div class="thumb-slides-container">
+            {% if include.thumbnail.images %}
+              {% for thumbnail_image in include.thumbnail.images %}
+
+              {% assign card_image = "//placehold.it/350x200" %}
+              {% if thumbnail_image %}
+                {% capture card_image %}
+                  {{ site.img_host }}/images/{{ blog.images.card.preview }}
+                {% endcapture %}
+              {% endif %}
+              <img class="activator" src="{{ card_image }}" alt="">
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+          {% else %}
+            {% assign card_image = "//placehold.it/350x200" %}
+              {% if include.thumbnail %}
+                {% capture card_image %}
+                  {{ site.img_host }}/images/{{ include.thumbnail }}
+                {% endcapture %}
+              {% endif %}
+          <div class="blog-post-thumb waves-effect waves-block waves-light">
+          <a href="{{ include.url }}"><img class="activator" src="{{ card_image }}" alt="{{ include.title }}">
+          </a>
+        </div>
+          {% endif %}
+        
+        <div class="post-body">
+          <a href="{{ include.url }}" class="post-title-link"><h2 class="green-text post-title">{{ include.title }}</h2></a>
+          <p class="post-content">{{ include.description | strip_html | truncatewords: 30 }} </p>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix card-content">
+      {% comment %}
+       <div class="fb-like left post-like" data-href="{{ include.url }}" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+       {% endcomment %}
+
+      <a href="{{ include.url }}" class="green-text right">read more</a>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <div class="sidebar-header">
+        <a href="{{ site.facebook }}"><i class="fa fa-facebook"></i></a>
+        <a href="{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
+        <a href="tel:{{ site.owner.phone }}" class="call-btn"><i class="fa fa-phone"></i></a>
+        <a href="sms:{{ site.owner.phone }}?body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}" class="sms-btn"><i class="fa fa-comment-o"></i></a>
+        <a href="#"><i class="fa fa-times"></i></a>
+        <div class="clear"></div>
+    </div>
+    <a href="#" class="sidebar-logo"></a>
+    <p class="sidebar-divider">Navigation</p>
+    <div class="sidebar-menu">
+        <a href="/l/mandani/amp" class="sidebar-item active-item"><i class="bg-red-dark fa fa-star-o"></i>Home<i class="fa fa-circle"></i></a>
+        <a href="/l/mandani/masterplan/amp/" class="sidebar-item mandani-click-masterplan"><i class="bg-green-dark fa fa-money"></i>Masterplan<i class="fa fa-circle"></i></a>
+        <a href="/l/mandani/showgallery/amp/" class="sidebar-item mandani-click-showgallery"><i class="bg-green-dark fa fa-money"></i>Show Gallery<i class="fa fa-circle"></i></a>
+        <a href="/l/mandani/pricing/amp/" class="sidebar-item mandani-click-pricing"><i class="bg-green-dark fa fa-money"></i>Pricing<i class="fa fa-circle"></i></a>
+        <a href="/l/mandani/how-to/amp/" class="sidebar-item mandani-click-howto-buy"><i class="bg-green-dark fa fa-money"></i>How To Buy?<i class="fa fa-circle"></i></a>
+        <div class="decoration decoration-margins"></div>
+    </div>
+    <p class="sidebar-divider full-top">Let's get Social</p>
+    <div class="sidebar-menu full-top">
+        <a href="{{ site.facebook }}" class="sidebar-item"><i class="facebook-bg fa fa-facebook"></i>Facebook<i class="fa fa-circle"></i></a>
+        <a href="tel:{{ site.owner.phone }}" class="sidebar-item"><i class="call-btn bg-green-dark fa fa-phone"></i>Call Us<i class="fa fa-circle"></i></a>
+        <a href="sms:{{ site.owner.phone }}?body=Hi%20Luchelle,%20I%27m%20interested%20in%20{{ page.title }}" class="sidebar-item sms-btn"><i class="bg-green-light fa fa-comment-o"></i>Text Us<i class="fa fa-circle"></i></a>
+        <a href="{{ site.owner.email }}" class="sidebar-item"><i class="bg-blue-light fa fa-envelope-o"></i>Mail Us<i class="fa fa-circle"></i></a>
+    </div>
+    <p class="sidebar-divider full-top">Copyright 2017. All rights reserved.</p>
+</amp-sidebar>

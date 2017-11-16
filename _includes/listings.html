@@ -1,0 +1,114 @@
+
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+      <div class="padd-tb-120 green portfolio-top">
+        <div class="portfolio-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="title">LISTINGS</h2>
+                <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
+                  <li class="active"><a href="#" data-target="*">All</a>
+                  </li>
+                  {% for listing_type in site.data.listing_type %}
+                  <li><a href="#" data-target=".{{ listing_type.type }}">{{ listing_type.name }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+      </div>
+      <div id="portfolioModal" class="modal white">
+        <div class="model-img"></div>
+        <div class="modal-content">
+          <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
+          <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="waves-effect btn-flat green-text modal-action">Interesting. Read More</a>
+          <a href="#" class="waves-effect btn-flat green-text modal-action modal-close">Close</a>
+        </div>
+      </div>
+
+      <div class="portfolio-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="clearfix protfolio-item" id="protfolio-msnry">
+
+              {% assign pages_listings_sorted_by_stars = site.pages | where: 'categories', 'listing' | sort: 'star' | reverse %}
+              {% for listing in pages_listings_sorted_by_stars %}
+
+              {% assign popup_image = "//placehold.it/650x350" %}
+              {% assign thumbnail_image = "//placehold.it/390x280" %}
+              {% if listing.images.home.popup %}
+                {% capture popup_image %}
+                  {{ site.img_host }}/images/{{ listing.images.home.popup }} 
+                {% endcapture %}
+              {% endif %}
+              {% if listing.images.home.thumbnail %}
+                {% capture thumbnail_image %}
+                  {{ site.img_host }}/images/{{ listing.images.home.thumbnail }}
+                {% endcapture %}
+              {% endif %}
+              <!-- Single Portfolio-->
+                <li class="single-port-item {{ listing.listing_type }}">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="{{ popup_image }}" data-title="{{ listing.title }}" data-content="{{ listing.content | strip_html | truncatewords:20 }}" data-demo-link="{{ listing.url }}"> <!-- Portfolio pop-up content-->
+                    <div class="protfolio-image">
+                      <img src="{{ thumbnail_image }}" alt="portfolio"> <!-- portfolio thumbnail-->
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">{{ listing.title }}</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+                {% endfor %}
+
+              {% assign page_listings_sorted_by_stars = site.categories.listing | sort: 'star' | reverse %}
+              {% for listing in page_listings_sorted_by_stars %}
+
+              {% assign popup_image = "//placehold.it/650x350" %}
+              {% assign thumbnail_image = "//placehold.it/390x280" %}
+              {% if listing.images.home.popup %}
+                {% capture popup_image %}
+                  {{ site.img_host }}/images/{{ listing.images.home.popup }} 
+                {% endcapture %}
+              {% endif %}
+              {% if listing.images.home.thumbnail %}
+                {% capture thumbnail_image %}
+                  {{ site.img_host }}/images/{{ listing.images.home.thumbnail }}
+                {% endcapture %}
+              {% endif %}
+              <!-- Single Portfolio-->
+                <li class="single-port-item {{ listing.listing_type }}">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="{{ popup_image }}" data-title="{{ listing.title }}" data-content="{{ listing.content | strip_html | truncatewords:20 }}" data-demo-link="{{ listing.url }}"> <!-- Portfolio pop-up content-->
+                    <div class="protfolio-image">
+                      <img src="{{ thumbnail_image }}" alt="portfolio"> <!-- portfolio thumbnail-->
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">{{ listing.title }}</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+                {% endfor %}
+              </ul>
+              <!-- portfolio load more button-->
+              <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light green"><i class="mdi-content-add"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #portfolio Section end -->

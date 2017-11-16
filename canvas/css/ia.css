@@ -1,0 +1,21 @@
+figure figcaption{
+	padding-bottom: 15px;
+	font-size: small;
+}
+
+figure figcaption h1{
+	font-size: large;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+figure figcaption cite{
+	display: block;
+	font-size: smaller;
+}
+
+.entry{
+	padding: 0;
+    border-bottom: 0;
+}

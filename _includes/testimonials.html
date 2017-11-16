@@ -1,0 +1,48 @@
+<!-- Testimonial Section end -->
+    <section id="testimonial" class="scroll-section root-sec green padd-tb-120 testimonial-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="testimonial-inner">
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head testimonial-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">testimonial</h2>
+                    <p class="regular-text">Here are some feedbacks we got from our clients and friends. I thank everyone for their kind words. These drives me and my team to deliver excellent service all the time.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="overflow-hidden">
+                    <div class="row">
+                      <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                        {% for client in site.data.clients %}
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="{{ site.cdn }}/images/avatar.png" alt="">
+                                <p class="saying-about">{{ client.feedback }}</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator green-text">{{ client.name }} -</span>
+                              <a href="#">{{ client.title }}</a>
+                            </div>
+                          </div>
+                        </div> <!-- ./single testimonial box -->
+                        {% endfor %}
+                      </div> <!-- #testimonialSlider end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapp tmo-ctrl">
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left green-text"></i></a>
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right green-text"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+    </section>
+    <!-- #testimonial Section end -->

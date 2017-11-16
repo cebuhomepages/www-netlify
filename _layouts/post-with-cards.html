@@ -1,0 +1,34 @@
+---
+layout: default
+is_blog: true
+---
+	{% if page.images.card.preview %}
+		{% assign banner_image = page.images.card.preview %}
+	{% else %}
+		{% assign banner_image = "//placehold.it/750x400" %}
+	{% endif %}
+
+    {% include post-banner.html banner=banner_image %}
+
+    <!-- Blog Post Container -->
+    <section class="bottom-50 root-sec grey lighten-5 blogpage-posts-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix all-blog-post blog-inner with-sidebar">
+            <div class="col-sm-8">
+              <div class="row" id="blog-posts">
+              
+              {{ content }}
+
+              </div>
+            </div>
+
+            {% include post-side-bar.html %}
+            
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+    </section> <!-- ./Blog Post container end-->
+
+    
+

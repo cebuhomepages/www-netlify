@@ -1,0 +1,11 @@
+
+{% if site.enforce_ssl %}
+<script type="text/javascript">
+    var host = "{{ site.enforce_ssl }}";
+    if ((window.location.host.indexOf(host) > -1 ) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
+{% endif %}
+

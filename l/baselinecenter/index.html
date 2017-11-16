@@ -1,0 +1,103 @@
+---
+layout: post
+categories: listing
+listing_type: condo
+star: 5
+
+fb:
+  image: baselinecenter-650x350.jpg        #650x350
+
+images:
+  home:
+    popup: baselinecenter-650x350.jpg       #650x350
+    thumbnail: bc-p-1-390x280.jpg   #390x280
+  card:
+    preview: baselinecenter-350x200.jpg     #350x200
+  post:
+    banner: bc-p-3-760x400.jpg      #760x400
+
+title: Baseline Center
+
+description: Base Line Center is the newest and highly awaited Multi-Use Development in Uptown Cebu. Located in the baseline Complex, along Juan Osmena St., Cebu City - This project aspires to provide solutions to the growing demand for commercial, office, and residential space in the area.
+
+---
+
+## Location and Vicinity
+ 
+One of the most desirable locations in the city, Base Line Center is within walking distance from the major lifestyle needs in Midtown Cebu. It belongs to a prime 1.6 hectare complex that is easily accessible from the major thoroughfares of Osmena Blvd., Escario St., and Mango Avenue.
+ 
+It’s within 1 kilometer radius:
+
+- Universities
+- Hospitals
+- Churches
+- Government Offices
+- Commercial Establishments
+
+## Site Development Plan
+
+The Base Line Center development creates a friendly pedestrian and vehicular circulation around a generously landscaped 1-hectare property. The development aspires to be a smart and sustainable mixed-use development where comfort and security are ensured. The site development includes:
+
+- Ground and 2nd Floor Commercial Spaces:
+- Supermarket
+- Fitness Gym
+- Food, Dining & Retail Outles
+- Alfresco Areas
+- Separate Lobby Access for Condotel, Office and Residential Users
+- Landscaped Gardens, and Well-Preserved Mature Trees
+- Surface, Basement & Podium parking
+- Internal Road and Pedestrian Network
+- Future access to F. Ramos ext. & M.P. Yap st.
+
+## Master Plan
+
+Base Line Center will be developed in two phases. The various uses will create a vibrant and complementary environment. Inspired by Base Line’s history as a favorite gathering place of Cebuano families, the design aims to make Base Line a preferred center of the community for the long-term.
+
+### Phase 1 (Tower 1)
+- Base Line HQ (office condo units)
+- Condotel (serviced residences)
+
+### Phase 1 (Tower 2)
+- Base Line Premier (residential tower)
+
+### Phase 2
+- Tower 3 & 4 for future development
+
+## BASELINE HQ
+
+- 21 story Office Condo
+- Located on the 3rd to 8th floor of Tower 1
+- Designed for business owners and investors seeking the advantages of owning a prime Midtown office address
+- Catering to various business sizes with office spaces from 33sqm to 142sqm
+- Separate Office Lobby and Elevator Access
+- Select Units with Floor-to-Ceiling Glass Windows
+- Basement Parking
+
+## BASELINE HQ: Features
+
+- 11-12 units per floor
+- Common Restroom per floor
+- 2 passenger elevator
+- 3.8m high ceiling (slab-to-slab)
+- Floor to ceiling glass on select units
+- CR provision for select units
+- 100% back-up power
+- Bare hand-over condition
+
+## BASELINE PREMIER
+- 6 story Residential Condo
+- Located on 5th to 26th floor of Tower 2
+- Designed with contemporary architecture to maximize the best views of Midtown Cebu
+- 1,800sqm Amenity area on the 5th floor podium offers various upscale facilities for the exclusive use of the residents
+- Units are smartly designed for flexible interior configuration
+- Podium parking
+
+## Pricing
+24sqm Studio Unit starts @ only Php 15,999 per month
+
+36sqm 1 Bedroom Unit starts @ only 24,199 per month
+
+## Learn more about it
+
+Get in touch with your Licensed Real Estate Broker today. 
+Contact 0917 631 2463 [luchelle@cebuhomepages.com](mailto:luchelle@cebuhomepages.com)

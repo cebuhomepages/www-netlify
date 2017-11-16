@@ -1,0 +1,42 @@
+---
+
+layout:     default
+title:      Cebu Home Pages
+type:       home
+navigation: true
+nav_list: 
+  - href:     '#blog'
+    scrollto: '#blog'
+    icon:     fa-pencil
+    description: Blog
+  - href:     "#funfacts"
+    scrollto: "#funfacts"
+    icon:     fa-pencil
+    description: Happy Clients
+  - href:     "#portfolio"
+    scrollto: "#portfolio"
+    icon:     fa-briefcase
+    description: Listings
+  - href:     "#contact"
+    scrollto: "#contact"
+    icon:     fa-paper-plane
+    description: Contact
+
+date:       2014-05-08
+image:      header-bear.jpg
+description: Hi I'm Luchelle and I'm here to assist you with your real estate needs. My goal is to simplify real estate for you and make it real easy.
+gradient:   1
+
+is_adsense: true
+---
+
+{% include facade.html %}
+
+{% include blog.html %}
+
+{% include client-relations.html %}
+
+
+{% include listings.html %}
+
+{% include contact.html %}

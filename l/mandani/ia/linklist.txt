@@ -1,0 +1,9 @@
+---
+layout: null
+---
+<!-- link list -->
+
+{% assign ia_pages = site.pages | where: 'categories', 'ia' %}
+{% for post in ia_pages limit:10 %}
+  {{ post.url | prepend: site.baseurl | prepend: site.url }}
+{% endfor %}

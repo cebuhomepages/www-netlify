@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Spot Downpayment",
+    "unit": {
+        "unit" : "5,947",
+        "tenure": "per mo. for 48mos."
+    },
+    "features": [
+       {
+         "strong" : "10%",
+         "desc": "Spot Downpayment"
+       },
+       {
+         "strong" : "2%",
+         "desc": "Discount from Pricelist"
+       },
+       {
+         "strong" : "48 months",
+         "desc": "easy stretch payment"
+       }
+    ]
+  },
+  {
+    "title": "Streteched",
+    "isPrefered": true,
+    "unit": {
+        "unit" : "11,364",
+        "tenure": "per mo. for 48mos."
+    },
+    "features": [
+       {
+         "strong" : "20%",
+         "desc": "Spot Downpayment"
+       },
+       {
+         "strong" : "48 months",
+         "desc": "easy stretch payment"
+       }
+    ]
+  }
+  ,
+  {
+    "title": "Defered Cash",
+    "unit": {
+        "unit" : "54,149",
+        "tenure": "per mo. for 48mos."
+    },
+    "features": [
+       {
+         "strong" : "8%",
+         "desc": "Discount from List price"
+       },
+       {
+         "strong" : "48 months",
+         "desc": "easy stretch payment"
+       }
+    ]
+  },
+  {
+    "title": "Spot Cash",
+    "spot": true,
+    "unit": {
+        "unit" : "&nbsp;&nbsp;&nbsp;&nbsp;Ask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "tenure": "broker pricing"
+    },
+    "features": [
+       {
+         "strong" : "10%",
+         "desc": "Spot Downpayment"
+       },
+       {
+         "strong" : "15%",
+         "desc": "Discount from List price"
+       },
+       {
+         "strong" : "1 time",
+         "desc": "worry free payment"
+       }
+    ]
+  }
+]

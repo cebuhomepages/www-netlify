@@ -1,0 +1,44 @@
+<head>
+  {% include secure-site.html %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %} {{page.title}} {% endif %}</title>
+  <meta name="description" content="{{ page.meta | strip_html | truncatewords:100 }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <link rel=”publisher” href=”https://plus.google.com/{{ site.google.page_id }}" />
+  <meta name="google-site-verification" content="{{ site.google.google-site-verification }}" />
+
+  {% include fb-meta.html %}
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="{{ '/images/favicon-96x96.png' | prepend: site.cdn }}" >
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ '/fonts/font-awesome/css/font-awesome.min.css' | prepend: site.cdn }}">
+  <link rel="stylesheet" href="{{ '/libs/materialize/css/materialize.min.css' | prepend: site.cdn }}" media="screen,projection" />
+  <link rel="stylesheet" href="{{ '/libs/sweetalert/sweet-alert.css' | prepend: site.cdn }}" media="screen,projection" />
+
+  <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.carousel.css' | prepend: site.cdn }}" media="screen,projection" />
+  <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.transitions.css' | prepend: site.cdn }}" media="screen,projection" />
+  <link rel="stylesheet" href="{{ '/libs/owl-carousel/owl.theme.css' | prepend: site.cdn }}" media="screen,projection" />
+  <link rel="stylesheet" href="{{ '/css/output.css' | prepend: site.cdn }}">
+
+  {% if page.is_blog %}
+    <link rel="stylesheet" href="{{ '/css/blog.css' | prepend: site.cdn }}">
+  {% endif %}
+
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  {% include fb-wca.html %}
+
+  {% if page.is_optin %}
+     {% include optin.css.html %}
+  {% endif %}
+
+  {% if page.is_adsense %}
+    {% include adsense.html %}
+  {% endif %}
+</head>

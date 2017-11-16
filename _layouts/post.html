@@ -1,0 +1,58 @@
+---
+layout: default
+is_blog: true
+
+nav_list: 
+  - href:     "/about.html"
+    scrollto: 
+    icon:     fa-user
+    description: About Luchelle
+  - href:     "/listings.html"
+    scrollto: 
+    icon:     fa-home
+    description: I Want to Buy
+  - href:     "/advice.html"
+    scrollto: 
+    icon:     fa-book
+    description: I Need Advice
+  - href:     "/contact.html"
+    scrollto: 
+    icon:     fa-phone
+    description: I Want to Meet You
+    
+---
+	{% if page.images.post.banner %}
+		{% capture banner_image %}{{ site.img_host }}/images/{{ page.images.post.banner }}{% endcapture %}
+	{% else %}
+		{% assign banner_image = "//placehold.it/750x400" %}
+	{% endif %}
+
+    {% include post-banner.html %}
+
+     <!-- Blog Post Container-->
+    <section id="all-posts" class="root-sec grey lighten-5 blogpage-posts-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix all-blog-post blog-inner with-sidebar">
+
+          <!-- post container start-->
+            <div class="col-sm-8">
+              <article class="single-post-page">
+                <div class="thumb-wrap">
+                  <img src="{{ banner_image }}" alt="">
+                </div>
+                <div class="single-post-content">
+					{{ content }}
+                </div>
+                
+                {% include post-footer.html %}
+              </article>
+            </div> <!-- ./post container end-->
+
+            <!-- Sidebar start-->
+            {% include post-side-bar.html %}
+          </div>
+        </div>
+      </div> <!-- ./container end-->
+    </section>  <!-- ./Blog Post Container end-->
+

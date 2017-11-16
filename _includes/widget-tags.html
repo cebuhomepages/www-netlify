@@ -1,0 +1,23 @@
+<aside class="single-widget">
+                  <h2 class="widget-title">TAGS</h2>
+                  <div class="widget-text">
+
+
+{% assign post = page %}
+{% if post.tags.size > 0 %}
+    {% for post_tag in post.tags %}
+        {% for data_tag in site.data.tags %}
+            {% if data_tag.id == post_tag %}
+                {% assign tag = data_tag %}
+            {% endif %}
+        {% endfor %}
+        {% if tag %}
+            <a href="{{ site.baseurl }}/tags/{{ tag.id }}" class="tags">{{ tag.name }}</a>
+        {% else %}
+            <a href="javascript:void(0);" class="disabled">{{ post_tag }}</a>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+</div>
+</aside>

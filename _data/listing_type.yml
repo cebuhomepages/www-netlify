@@ -1,0 +1,11 @@
+- name: Condo
+  type: condo
+
+- name: House And Lot
+  type: house_and_lot
+
+- name: Lot only
+  type: lot
+
+#- name: Rent
+#  type: rent

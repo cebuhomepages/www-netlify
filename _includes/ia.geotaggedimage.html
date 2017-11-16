@@ -1,0 +1,21 @@
+<figure data-feedback="fb:likes, fb:comments">
+      <img src="{{ include.image }}" />
+       <figcaption><h1>{{ include.heading }}</h1>{{ include.description }}
+                <cite>{{ include.cite }}</cite>
+            </figcaption>
+                   <script type="application/json" class="op-geotag">
+                { 
+                "type": "Feature", 
+                "geometry":{ 
+                "type": "Point", 
+                "coordinates":[{{ include.x }}, {{ include.y }}] },
+                "properties":{ 
+                "title": "{{ include.title }}",
+                "style": "hybrid",
+                "radius": 10000
+                 } 
+                 }
+            </script>
+
+
+        </figure>

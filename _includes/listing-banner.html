@@ -1,0 +1,112 @@
+    <section id="banner" class="root-sec green padd-tb-55 single-banner blogpage-banner-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix blog-banner-text blog-single-banner">
+            <div class="col-md-12">
+              <h2 class="title">Mivesa </h2>
+
+              {% if page.author %}
+              <ul class="clearfix blog-post-meta">
+                <li>By <a href="#">{{ page.author }}</a>
+                </li>
+                <li>{{ page.date | date_to_long_string  }}</li>
+                
+                <li>
+                {% if site.data.tags[tag] %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>
+                {% else %}
+                 <a href="javascript:void(0);" class="disabled">{{ tag }}</a>
+                {% endif %}
+               </li>
+              </ul>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- ./Banner end -->
+
+
+{% comment %}
+<!-- Banner start -->
+    <section id="listing-banner" class="grey lighten-5 home-wrap"
+    style="background: url('//googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg/images/home-bg.jpg') no-repeat fixed center center / cover;">
+      <div class="sec-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card small left-align">
+                <div class="card-content">
+                  <span class="card-title">Php 2,0000,000</span>
+                  <p><h3>Equity: 10,000/month | Est monthly Amortization: 15,000/month</h3></p>
+                  <p>
+                    <div class="clearfix card-panel grey lighten-5 cform-wrapper">
+                      <form action="#" id="listingForm" novalidate>
+                        <div class="input-field">
+                          <input id="contact_name" type="text" name="name" class="validate input-box">
+                          <label for="contact_name" class="input-label">Your Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="email" name="_replyto" class="validate input-box">
+                          <label for="email" class="input-label">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="phoneNum" type="number" name="phoneNum" class="validate input-box">
+                          <label for="phoneNum" class="input-label">Phone Number</label>
+                        </div>
+                        <div class="input-field textarea-input">
+                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;">
+                            
+                            Hi, I found your listing on Cebu Home Pages. Please send me more information about Mivesa Garden Residences. Thank you.
+                          </textarea>
+                          <label for="textarea1" class="input-label">Message</label>
+                        </div>
+                        <div class="input-field submit-wrap clearfix">
+                          <button type="submit" class="left waves-effect btn-flat green-text submit-btn">Request Info</button>
+                          <div class="right form-loader-area">
+                            <svg class="circular size-20" height="20" width="20">
+                              <circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                            </svg>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="card large center-align">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="images/sample-1.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href='#'>This is a link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+        <div class="section-call-to-area">
+          <div class="container">
+            <div class="row">
+              <a href="#blog" class="btn-floating btn-large button-middle section-call-to-btn animated btn-up btn-hidden" data-section="#blog">
+                <i class="mdi-navigation-expand-more"></i>
+              </a>
+            </div>
+          </div>
+          <!-- .container end -->
+        </div>
+      </div>
+    </section>
+    <!-- #home Section end -->
+{% endcomment %}

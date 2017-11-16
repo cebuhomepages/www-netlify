@@ -1,0 +1,104 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/l/mandani/ia/instantfeed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}</id>
+    <author>
+      <name>{{ site.owner.name }}</name>
+    </author>
+    {% assign ia_pages = site.pages | where: 'categories', 'ia' %}
+    {% for post in ia_pages %}
+      <item>
+        <title>{{ post.header.title | xml_escape }}</title>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <author>{{ site.owner.name }}</author>
+        {% if post.summaryfeed and post.excerpt %}
+          <description>{{ post.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ post.content | strip_html | truncatewords:30 }}</description>
+        {% endif %}
+        <content:encoded>
+            <![CDATA[
+                <!doctype html>
+                <html lang="en" prefix="op: http://media.facebook.com/op#">
+              <head>
+                <meta charset="utf-8">
+                <meta property="fb:pages" content="171758572945221" />
+                {% if page.og_image %}
+                <meta property="og:image" content="{{ page.og_image }}" />
+                {% else %}
+                <meta property="og:image" content="https://dmcagfio3mnht.cloudfront.net/canvas/images/l/mandani/master-plan.jpg" />
+                {% endif %}
+                <link rel="canonical" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+                <meta property="op:markup_version" content="v1.0">
+                <meta property="fb:article_style" content="CHP Theme">
+              </head>
+              <body>
+                <article>
+                  <header>
+                      <h1>{{ post.header.title | xml_escape }}</h1>
+                      {% if post.header.video.src %}
+      <!-- The header image shown inside your article --> 
+      <figure data-mode=aspect-fit>
+      <video loop>
+        
+        <source src="{{ post.header.video.src }}" type="{{ post.header.video.type }}" />
+     
+        </video>
+      </figure>
+      {% else %}
+
+      <!-- The cover image shown inside your article --> 
+      <figure>
+        <img src="{{ post.header.image.src }}" />
+        <figcaption>{{ post.header.image.description }}</figcaption>
+      </figure>
+
+      {% endif %}
+                      <time class="op-published" dateTime="{{ post.date | date: "%Y-%m-%d %H:%M:%S %Z" }}">{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</time>
+                      <time class="op-modified" dateTime="{{ post.modified | date: "%Y-%m-%d %H:%M:%S %Z" }}">{{ post.modified }}</time>
+                  </header>
+                  {% if post.instantfeedback %}
+                    {{ post.content | replace: '<figure>', '<figure data-feedback="fb:likes">' }}
+                  {% else %}
+                    {{ post.content }}
+                  {% endif %}
+                    <footer>
+                        <aside>
+                            {% if post.credit %}
+                              {{ post.credit }}.<br />
+                            {% endif %}
+                            We believe in Simplified Real Estate Transactions, Sound and Well Informed Decisions. Here to help. </aside>
+                        <small>© cebuhomepages.com</small>
+                  </footer>
+                  <figure class="op-tracker">
+    <iframe>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </iframe>
+                </article>
+              </body>
+            </html>
+        ]]>
+        </content:encoded>
+
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

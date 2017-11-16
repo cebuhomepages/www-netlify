@@ -1,0 +1,16 @@
+<!-- Facebook Conversion Code for Cebu Home Page Readers -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '{{site.fb.conversion.readers.id}}', {'value':'{{site.fb.conversion.readers.value}}','currency':'PHP'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev={{site.fb.conversion.readers.id}}&amp;cd[value]={{site.fb.conversion.readers.value}}&amp;cd[currency]=PHP&amp;noscript=1" /></noscript>

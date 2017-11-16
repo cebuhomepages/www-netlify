@@ -1,0 +1,87 @@
+<!-- header navigation start -->
+    <header id="navigation" class="root-sec white nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="nav-inner">
+              <nav class="primary-nav">
+                <div class="clearfix nav-wrapper">
+                  {% if page.is_listing or page.logo %}
+                  <a href="{{ site.baseurl }}{{ page.url }}" class="left brand-logo">
+                      <img src="{{ page.logo | prepend: site.cdn }}" alt="">
+                  </a>
+                  
+                  {% else %}
+
+                  <a href="{{ site.baseurl }}" class="left brand-logo">
+                    {% if site.logo %}
+                      <img src="{{ site.logo | prepend: site.cdn }}" alt="">
+                    {% else %}
+                      <img src="{{ '/images/logo.png' | prepend: site.cdn }}" alt="">
+                    {% endif %}
+                  </a>
+                  {% endif %}
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                  <ul class="right static-menu">
+                    <li class="search-form-li">
+                      <a id="initSearchIcon" class=""><i class="mdi-action-search"></i> </a>
+                      <div class="search-form-wrap hide">
+                        <form id="searchFormSubmit" action="#" class="">
+                          <input type="search" class="search">
+                          <button type="submit"><i class="mdi-action-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="dropdown-button blog-submenu-init" href="#!" data-activates="dropdown1">
+                        <i class="mdi-navigation-more-vert right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="inline-menu side-nav" id="mobile-demo">
+
+                  <!-- Mini Profile // only visible in Tab and Mobile -->
+                    <li class="mobile-profile">
+                     <div class="profile-inner">
+                        <div class="pp-container">
+                            {% if site.profile_pic %}
+                            <img src="{{ site.profile_pic | prepend: site.img_host }}" alt="">
+                            {% else %}
+                            <img src="{{ '/images/person.png' | prepend: site.img_host }}" alt="">
+                            {% endif %}
+                        </div>
+                        <h3>{{ site.owner.fullname }}</h3>
+                        <h5>{{ site.owner.job }}</h5>
+                      </div>
+                    </li><!-- mini profile end-->
+                    
+                    {% for nav in page.nav_list %}
+                    <li>
+                      {% if nav.href contains "#" %}
+                      <a href="{{ nav.href }}" data-section="{{ nav.scrollto }}" class="menu-smooth-scroll">
+                      <i class="fa {{ nav.icon }} fa-fw"></i>{{ nav.description }}</a>
+                      {% else %}
+                      <a href="{{ site.baseurl }}{{ nav.href }}">
+                      <i class="fa {{ nav.icon }} fa-fw"></i>{{ nav.description }}</a>
+                      {% endif%}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  <ul id="dropdown1" class="inline-menu submenu-ul dropdown-content">
+                    <li><a href="{{ site.baseurl }}">Home</a></li>
+                    <li><a href="{{ site.baseurl }}/listings.html">All Listings</a>
+                    </li>
+                    <li><a href="{{ site.baseurl }}/advice.html">All Blogs</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container end -->
+    </header>
+    <!-- #header  navigation end -->

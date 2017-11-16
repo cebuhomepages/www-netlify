@@ -1,0 +1,38 @@
+{
+  "header-text": "WHAT DO YOU GET FOR A 1 Bedroom LOFT UNIT?",
+  "details": [
+    {
+      "icon":"icon-desktop",
+      "desc":"Spacious 46.94 sqm Unit"
+    },
+    {
+      "icon":"icon-eye-open",
+      "desc":"Spectacular Sea View"
+    },
+    {
+      "icon":"icon-beaker",
+      "desc":"Progressive Community"
+    },
+    {
+      "icon":"icon-magic",
+      "desc":"Built with World Class Standard"
+    },
+    {
+      "icon":"icon-font",
+      "desc":"Built with 24x7 Security"
+    },
+    {
+      "icon":"icon-stack3",
+      "desc":"Close Proximity"
+    },
+    {
+      "icon":"icon-file2",
+      "desc":"Impressive Property Management"
+    },
+    {
+      "icon":"icon-support",
+      "desc":"Enjoy the Pool"
+    }
+  ],
+  "price": "19,469"
+}

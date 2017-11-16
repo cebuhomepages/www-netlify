@@ -1,0 +1,9 @@
+# To generate the tag page will need to be defined here
+- id: loans
+  name: Loans
+
+- id: how-to
+  name: How Tos
+
+- id: tips
+  name: Tip
