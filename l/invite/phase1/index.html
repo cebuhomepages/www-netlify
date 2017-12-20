@@ -16,25 +16,25 @@ title: Mandani Bay | Master Plan
 description: Mandani Bay is a premium mixed-use development in Mandaue City, Cebu. It occupies a waterfront site of approximately 20 hectares with a prominent location between Mactan Island, the home of Cebu International Airport, and Cebu business park, a major commercial area in Cebu.  The project will be developed in phases over more than 10 years.
 
 units: 
-  - 800x600: 
+  - x800x600: 
       thumbnail: /canvas/images/portfolio/2/1.jpg
       full: /canvas/images/portfolio/full/1.jpg
     type: Studio
     url: #
     sqm: "29.7"
-  - 800x600: 
+  - x800x600: 
       thumbnail: /canvas/images/portfolio/2/1.jpg
       full: /canvas/images/portfolio/full/1.jpg
     type: 1 Bedroom
     url: #
     sqm: "30.7"
-  - 800x600: 
+  - x800x600: 
       thumbnail: /canvas/images/portfolio/2/1.jpg
       full: /canvas/images/portfolio/full/1.jpg
     type: 2 Bedroom
     url: #
     sqm: "30.7"
-  - 800x600: 
+  - x800x600: 
       thumbnail: /canvas/images/portfolio/2/1.jpg
       full: /canvas/images/portfolio/full/1.jpg
     type: 3 Bedroom
@@ -230,10 +230,10 @@ units:
 						<article class="portfolio-item pf-media pf-icons">
 							<div class="portfolio-image">
 								<a href="{{ unit.url }}">
-									<img src="{{ unit.800x600.thumbnail | prepend: site.cdn }}" alt="{{ unit.type }} Unit at {{ unit.sqm }} sqm">
+									<img src="{{ unit.x800x600.thumbnail | prepend: site.cdn }}" alt="{{ unit.type }} Unit at {{ unit.sqm }} sqm">
 								</a>
 								<div class="portfolio-overlay">
-									<a href="{{ unit.800x600.full | prepend: site.cdn }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+									<a href="{{ unit.x800x600.full | prepend: site.cdn }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
 									<a href="{{ unit.url }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
 								</div>
 							</div>
@@ -421,7 +421,7 @@ units:
 
 					<div class="col_half">
 						Copyrights &copy; 2016 All Rights Reserved by Cebu Home Pages.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="{{ '/privacy-policy/'' | prepend: site.baseurl }}">Privacy Policy</a></div>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="{{ '/privacy-policy/' | prepend: site.baseurl }}">Privacy Policy</a></div>
 					</div>
 
 					<div class="col_half col_last tright">

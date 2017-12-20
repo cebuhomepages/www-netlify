@@ -17,7 +17,7 @@
     src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
 	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
-<link rel="canonical" href="{{ page.url | prepend: site.baseurl | replace: '/amp' : '/'}}">
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl | replace: '/amp' , '/'}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -1150,7 +1150,7 @@ padding-top:0px;
 </amp-analytics>
 	<header>
 		<button class="header-icon-1" on='tap:sidebar.open'><i class="fa fa-navicon"></i></button>
-		<a href="{{ page.url | replace '/index.html' : '' }}" class="header-logo"></a>
+		<a href="{{ page.url | replace: '/index.html' , '' }}" class="header-logo"></a>
 		<a href="mailto: {{ site.owner.email }}?subject=Inquiry%20For%20{{ page.title }}" class="email-btn header-icon-2"><i class="fa fa-envelope-o"></i></a>
 	</header>
 	<div class="header-clear"></div>

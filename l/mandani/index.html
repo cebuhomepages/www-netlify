@@ -50,7 +50,7 @@ postedBy:
 
 	<link rel="stylesheet" href="{{ site.cdn }}/canvas/css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="amphtml" href="{{ page.url | prepend: site.baseurl | replace: '/index.html' : '' | append: '/amp'}}" />
+	<link rel="amphtml" href="{{ page.url | prepend: site.baseurl | replace: '/index.html' , '' | append: '/amp'}}" />
 	<!--[if lt IE 9]>
 		<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -948,7 +948,7 @@ Phase One will comprise two blocks of approximately <strong>1,200</strong> condo
 
 					<div class="col_half">
 						Copyrights &copy; 2016 All Rights Reserved by Cebu Home Pages.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="{{ '/privacy-policy/'' | prepend: site.baseurl }}">Privacy Policy</a></div>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="{{ '/privacy-policy/' | prepend: site.baseurl }}">Privacy Policy</a></div>
 					</div>
 
 					<div class="col_half col_last tright">

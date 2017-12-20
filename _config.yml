@@ -1,43 +1,125 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+name: cebuhomepages
+description: "Cebu Home Page, helping you buy and sell your property with ease."
+author:
+  name: Luchelle
+  email: luchelle@cebuhomepages.com
 
-# Build settings
+# Grunt handles images and assets.
+exclude: ['images', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+#   auto_ids: true
+#   footnote_nr: 1
+#   entity_output: as_char
+#   toc_levels: 1..6
+#   use_coderay: false
+#   coderay:
+#     coderay_wrap: div
+#     coderay_line_numbers: inline
+#     coderay_line_numbers_start: 1
+#     coderay_tab_width: 4
+#     coderay_bold_every: 10
+#     coderay_css: style
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+highlighter: pygments
+
+#baseurl: ""
+#cdn: ""
+
+
+#baseurl: "http://localhost:3000"
+#cdn: "http://localhost:3000"
+#img_host: "http://localhost:3000"
+#baseurl: "https://cebuhomepages.github.io"
+#cdn: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+#baseurl: "https://www.cebuhomepages.com"
+#baseurl: "http://www.cebuhomepages.com.s3-website-ap-southeast-1.amazonaws.com"
+#img_host: "https://dl.dropboxusercontent.com/u/39191093"
+
+#img_host: "https://dmcagfio3mnht.cloudfront.net"
+#cdn: "https://dmcagfio3mnht.cloudfront.net"
+#img_host: "https://googledrive.com/host/0B3imkbmUgHpnflNkYjhIcElFVm9WVm51VHQ1NEdIb2QwWWcyRFNDSDRUbHViNmdPUDV1Tjg"
+#cdn: "https://dl.dropboxusercontent.com/u/39191093"
+
+#### Local DEV
+#baseurl: "http://localhost:3000"
+cdn: "http://127.0.0.1:4000"
+img_host: "http://127.0.0.1:4000"
+
+#### Live
+#baseurl: "https://www.cebuhomepages.com"
+#img_host: "https://dmcagfio3mnht.cloudfront.net"
+#cdn: "https://dmcagfio3mnht.cloudfront.net"
+
+
+enforce_ssl: "cebuhomepages.com"
+
+title: Cebu Home Pages
+
+owner:
+  fullname: Luchelle Ann Cabigon
+  nickname: Luchelle
+  nickname_short: Luch
+  job: Licensed Real Estate Broker
+  service: I'm helping you Buy or Sell your property
+  address: "Hernan Cortes Street, Casuntingan, Mandaue City, CEBU,PH"
+  phone: "+639176312463"
+  phone_display: "0917 631 2463"
+  email: luchelle@cebuhomepages.com
+  site: www.cebuhomepages.com
+  whatsapp:
+    username: +639176312463
+
+fbc-comments-firebase: https://chpcomments.firebaseio.com/
+
+logo: /images/logo.jpg
+profile_pic: /images/person-360x360.jpg
+
+name: Cebu Home Pages
+copyright_date: 2015
+
+# Social Setup
+facebook: https://facebook.com/cebuhomepages
+messenger: //m.me/cebuhomepages
+xfb:
+  app_id: 270751863008126
+  on: true
+  og_image: /images/logo.jpg # Default image for Open Graph tag
+  og_image_type: image/jpg
+  og_image_width: 300
+  og_image_height: 300
+  conversion:
+    readers:
+      id: 6030369792953
+      value: 0.01
+  wca: 
+    pixel_id: 729985667100309
+
+twitter: https://twitter.com/cebuhomepages
+google_plus: https://google.com/+Cebuhomepages
+
+google_analytics: UA-48709253-1
+xgoogle:
+  page_id: 116568573527527678461
+  google-site-verification: vYBf-jDAw2Ewu5a3SqpYhUjPxer2j46QUK7ohpBFFXU
+
+
+root:
+  css: /canvas/css
+  js: /canvas/js
+  images: /canvas/images
+  r: /canvas
+  r4x1: /v4.1
