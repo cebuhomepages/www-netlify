@@ -64,6 +64,10 @@ baseurl: "https://www.cebuhomepages.com"
 img_host: "https://dmcagfio3mnht.cloudfront.net"
 cdn: "https://dmcagfio3mnht.cloudfront.net"
 
+##### netlify cdn all in
+baseurl: "https://www.cebuhomepages.com"
+img_host: ""
+cdn: ""
 
 enforce_ssl: "cebuhomepages.com"
 
