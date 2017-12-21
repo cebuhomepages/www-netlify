@@ -60,9 +60,9 @@ cdn: "http://127.0.0.1:4000"
 img_host: "http://127.0.0.1:4000"
 
 #### Live
-#baseurl: "https://www.cebuhomepages.com"
-#img_host: "https://dmcagfio3mnht.cloudfront.net"
-#cdn: "https://dmcagfio3mnht.cloudfront.net"
+baseurl: "https://www.cebuhomepages.com"
+img_host: "https://dmcagfio3mnht.cloudfront.net"
+cdn: "https://dmcagfio3mnht.cloudfront.net"
 
 
 enforce_ssl: "cebuhomepages.com"
