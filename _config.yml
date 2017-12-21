@@ -65,7 +65,7 @@ img_host: "https://dmcagfio3mnht.cloudfront.net"
 cdn: "https://dmcagfio3mnht.cloudfront.net"
 
 ##### netlify cdn all in
-baseurl: "https://www.cebuhomepages.com"
+baseurl: "https://flamboyant-sammet-0d27af.netlify.com"
 img_host: ""
 cdn: ""
 
