@@ -6,8 +6,13 @@ is_blog: true
 <html dir="ltr" lang="en-US">
 <head>
 
+    {% include secure-site.html %}
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="@ninjapawikan" />
+    <meta name="author" content="@ninjapawikan" />
+    
+
+	{% include fb-meta.html %}
 
 	<!-- Stylesheets
 	============================================= -->
@@ -46,11 +51,16 @@ is_blog: true
 
 	<!-- Document Title
 	============================================= -->
-	<title>Cebu Home Pages</title>
+    <title>Cebu Home Pages</title>
+    {% include fb-wca.html %}
+	{% include analytics.html %}
 
 </head>
 
 <body class="stretched side-push-panel">
+
+    	{% include adwords-conversion-tracking.html %}
+        {% include fb-sdk.html %}
 
 	<div id="side-panel">
 
@@ -949,7 +959,9 @@ is_blog: true
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script type="text/javascript" src="/assets/4.5.1/js/functions.js"></script>
+    <script type="text/javascript" src="/assets/4.5.1/js/functions.js"></script>
+    
+    {% include adwords-remarketing.html %}
 
 </body>
 </html>

@@ -2,8 +2,12 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+	{% include secure-site.html %}
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="@ninjapawikan" />
+
+	{% include fb-meta.html %}
 
 	<!-- Stylesheets
 	============================================= -->
@@ -40,6 +44,9 @@
 
 	<link rel="stylesheet" href="/assets/4.5.1/css/colors.php?color=2C3E50" type="text/css" />
 
+	{% include fb-wca.html %}
+	{% include analytics.html %}
+
 	<!-- Document Title
 	============================================= -->
 	<title>Cebu Home Pages</title>
@@ -47,6 +54,8 @@
 </head>
 
 <body class="stretched side-push-panel">
+	{% include adwords-conversion-tracking.html %}
+	{% include fb-sdk.html %}
 
 	<div id="side-panel">
 
@@ -930,6 +939,7 @@
 		});
 
 	</script>
+	{% include adwords-remarketing.html %}
 
 </body>
 </html>
