@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 categories: blog
 star: 5
 title: Top 5 Reasons to choose Mivesa Garden Residences

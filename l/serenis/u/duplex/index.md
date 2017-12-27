@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 categories: serenis
 
 unit_name: Duplex

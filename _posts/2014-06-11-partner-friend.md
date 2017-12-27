@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 
 author: Ian Cabigon
 date: 2014-06-11

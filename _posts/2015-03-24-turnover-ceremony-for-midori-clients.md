@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 
 author: Luchelle Ann Cabigon
 date: 2015-03-24

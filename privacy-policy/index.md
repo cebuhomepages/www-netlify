@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 title: Privacy Policy
 
 fb:

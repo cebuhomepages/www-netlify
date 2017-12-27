@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 categories: listing
 listing_type: condo
 star: 3

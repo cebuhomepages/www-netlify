@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: blog.single
 
 author: Ian Cabigon
 date: 2014-02-28
+date_text: 28th Feb 2014
+entry_image: /assets/4.5.1/images/stock-pen4-760x400.jpg
 
 fb:
   image: stock-pen4-650x350.jpg         #650x350

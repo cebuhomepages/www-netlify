@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog.single
 categories: listing
 listing_type: house_and_lot
 star: 5
