@@ -60,14 +60,14 @@ cdn: "http://127.0.0.1:4000"
 img_host: "http://127.0.0.1:4000"
 
 #### Live
-baseurl: "https://www.cebuhomepages.com"
-img_host: "https://dmcagfio3mnht.cloudfront.net"
-cdn: "https://dmcagfio3mnht.cloudfront.net"
+#baseurl: "https://www.cebuhomepages.com"
+#img_host: "https://dmcagfio3mnht.cloudfront.net"
+#cdn: "https://dmcagfio3mnht.cloudfront.net"
 
 ##### netlify cdn all in
-baseurl: "https://flamboyant-sammet-0d27af.netlify.com"
-img_host: ""
-cdn: ""
+#baseurl: "https://flamboyant-sammet-0d27af.netlify.com"
+#img_host: ""
+#cdn: ""
 
 enforce_ssl: "cebuhomepages.com"
 

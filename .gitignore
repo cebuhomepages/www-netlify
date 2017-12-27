@@ -1,3 +1,5 @@
 _site
+_v2/**/*
+_v4/**/*
 .sass-cache
 .jekyll-metadata
