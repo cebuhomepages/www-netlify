@@ -2,7 +2,7 @@
 layout: post
 
 author: Ian Cabigon
-date: 2016-02-21
+date: 2016-02-22
 
 fb:
   image: stock-desk5-650x350.jpeg         #650x350
