@@ -164,6 +164,15 @@ layout: null
 	<script type="text/javascript">
 		$(function() {
 			$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+
+			$('.contactForm').submit(function(e){
+				e.preventDefault();
+
+				var $form = $(this);
+				$.post($form.attr("action"), $form.serialize()).then(function() {
+					alert("Thank you!");
+				});
+			})
 		});
 	</script>
 

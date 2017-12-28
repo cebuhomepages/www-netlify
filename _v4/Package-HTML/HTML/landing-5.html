@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
 
@@ -699,7 +699,18 @@
 	<script type="text/javascript">
 		$(function() {
 			$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+
+			$('.contactForm').submit(function(e){
+				e.preventDefault();
+
+				var $form = $(this);
+				$.post($form.attr("action"), $form.serialize()).then(function() {
+					alert("Thank you!");
+				});
+			})
 		});
+
+
 	</script>
 
 </body>
